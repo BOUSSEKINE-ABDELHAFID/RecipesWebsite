@@ -1,0 +1,132 @@
+@import "../../App.css";
+
+.Recipe {
+  width: 100%;
+  height: 100%;
+  margin-left: 10vw;
+  transition: 0.2s;
+}
+
+.Recipe h2 {
+  opacity: 1;
+  position: relative;
+  top: 27vh;
+  left: 7vh;
+  width: 50%;
+  color: white;
+}
+
+.Recipe img {
+  height: 50vh;
+  width: 20vw;
+  transition: 0.1s;
+}
+
+.Recipe img:hover {
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.RecipeLink {
+  text-decoration: none;
+  color: black;
+}
+
+.RecipesList {
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1050px) {
+  .Recipe img {
+    width: 30vw;
+  }
+
+  .RecipesList {
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .Recipe img {
+    width: 55vw;
+  }
+
+  .RecipesList {
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 550px) {
+  .Recipe img {
+    width: 75vw;
+  }
+  .RecipesList {
+    overflow-x: hidden;
+    margin-left: 5%;
+  }
+
+  .Recipe h2 {
+    width: 80%;
+  }
+}
+
+.RecipeDetails {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.RecipeDetails img {
+  width: 50%;
+  height: 30%;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+}
+
+.RecipeDetails ul {
+  list-style: none;
+  text-align: center;
+}
+
+.RecipeDetails ul li {
+  margin-top: 2vh;
+}
+
+.linkExplore {
+  margin-top: 5vh;
+  padding: 1rem 3rem;
+  background-color: var(--mainGreen);
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  margin-bottom: 5vh;
+}

@@ -1,0 +1,30 @@
+@import "../../App.css";
+
+.Footer {
+  background-color: var(--mainBlack);
+  width: 100%;
+  height: 20vh;
+  border-top: solid 1px #222;
+  color: var(--secondWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: var(--secondWhite);
+}
+
+.socialIcons {
+  font-size: 25px;
+  margin-bottom: 1vh;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.socialIcons:hover {
+  color: var(--mainWhite);
+}

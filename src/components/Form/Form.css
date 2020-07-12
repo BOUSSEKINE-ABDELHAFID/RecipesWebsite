@@ -1,0 +1,55 @@
+@import "../../App.css";
+.signForm {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.signForm input {
+  width: 25rem;
+  padding: 1rem 3rem;
+  -webkit-text-fill-color: white;
+  font-size: 17px;
+  margin-top: 3vh;
+  /*border: 2px solid var(--mainWhite);*/
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #222222;
+}
+
+.signForm button {
+  padding: 0.8rem 4rem;
+  outline: none;
+  border: 1px solid var(--mainWhite);
+  border-radius: 20px;
+  background-color: var(--mainBlack);
+  color: white;
+  margin-top: 2vh;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.signForm button:hover {
+  background-color: var(--mainGreen);
+  border-color: var(--mainGreen);
+}
+
+@media (max-width: 500px) {
+  .signForm input {
+    width: 20rem;
+    padding: 1rem 3rem;
+    font-size: 17px;
+    margin-top: 3vh;
+    /*border: 2px solid var(--mainWhite);*/
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #222222;
+  }
+}

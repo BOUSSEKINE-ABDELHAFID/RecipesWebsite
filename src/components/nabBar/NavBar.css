@@ -1,0 +1,171 @@
+@import "../../App.css";
+.navBar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  z-index: 999;
+}
+
+.navBar2 {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--mainBlack);
+  position: fixed;
+  position: fixed;
+  border-bottom: 0.5px solid #222;
+  z-index: 999;
+}
+
+.navSpace {
+  flex: 1;
+}
+
+.logo {
+  color: var(--mainGreen);
+  font-size: 25px;
+  font-family: cursive;
+  margin-left: 5%;
+  font-weight: 700;
+}
+
+.navElements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.navElements ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.navElements ul li {
+  margin-left: 6rem;
+  cursor: pointer;
+  color: var(--mainWhite);
+  transition: 0.5s;
+}
+
+.navElements ul li:hover {
+  color: var(--mainGreen);
+}
+.bbb {
+  padding: 0;
+}
+
+.menuButton {
+  border-radius: 100px;
+  margin-left: 10%;
+  cursor: pointer;
+  font-size: 40px;
+  color: var(--mainWhite);
+}
+
+.drawer {
+  height: 100vh;
+  width: 70vw;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  overflow: hidden;
+}
+
+.drawer ul {
+  width: 100%;
+  margin-top: 20%;
+  margin-left: 10%;
+  list-style: none;
+}
+
+.drawer ul li {
+  font-size: 20px;
+  margin-top: 5vh;
+  transition: 0.5s;
+}
+
+.navDrawerBtn {
+  opacity: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--mainWhite);
+  transition: 0.5s;
+}
+.signLink {
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--mainWhite);
+}
+
+.sign {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+}
+
+.sign2 {
+  background: var(--mainGreen);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: var(--mainWhite);
+}
+
+@media (max-width: 900px) {
+  .navBar {
+    width: 100%;
+    padding-left: 4rem;
+  }
+  .navElements {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .navDrawerBtn {
+    opacity: 1;
+    margin-left: 5%;
+  }
+
+  .logo {
+    left: 50%;
+  }
+
+  .navSpace {
+    flex: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .navBar {
+    overflow-x: hidden;
+  }
+  .navDrawerBtn {
+    opacity: 1;
+    margin-left: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .navDrawerBtn {
+    opacity: 1;
+    margin-left: 130%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navDrawerBtn {
+    opacity: 1;
+    margin-left: 180%;
+  }
+}

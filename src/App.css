@@ -1,38 +1,365 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainBlack: #000;
+  --mainGrey: #232323;
+  --mainGreen: rgb(45, 241, 45);
+  --mainWhite: #fff;
+  --secondWhite: grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  height: 100vh;
+  width: 100%;
+  background: url("./images/beef-3840x2160-steak-food-cooking-grill-vegetables-meal-meat-tomato-408.jpg")
+    no-repeat;
+  padding-bottom: 30vh;
+  background-position: left;
+  background-size: cover;
+  background-clip: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .Header {
+    height: 100vh;
+    background: url("./images/beef-3840x2160-steak-food-cooking-grill-vegetables-meal-meat-tomato-408.jpg")
+      no-repeat;
+    padding-bottom: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.find {
+  height: 150vh !important;
+  background-color: var(--mainBlack);
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find h1,
+.explore h1 {
+  text-align: center;
+  color: var(--mainWhite);
+  font-size: 80px;
+}
+
+.lastProducts {
+  height: 250vh;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastProductImg {
+  width: 60%;
+  height: 50%;
+  background-position: center;
+  background: url("./images/pizza-2560x1440-salami-corn-olives-5972.jpg")
+    no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.lastProduct {
+  width: 40%;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-left: 4%;
+}
+
+.lastProduct h1 {
+  font-size: 40px;
+  padding-bottom: 3vh;
+  z-index: 1;
+}
+
+.lastProduct p {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .lastProducts {
+    height: 100vh;
+    background-color: var(--mainBlack);
+    color: var(--mainWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lastProductImg {
+    width: 100%;
+    height: 50%;
+    order: 1;
+    background-attachment: scroll;
+  }
+
+  .lastProduct {
+    width: 90%;
+    text-align: center;
+    order: 2;
+  }
+
+  .lastProduct h1 {
+    text-align: center;
+  }
+}
+
+.fold {
+  background-color: var(--mainBlack);
+  height: 120vh;
+  width: 100%;
+  background: url("./images/pizza-2560x1440-tomatoes-peppers-cheese-basil-salami-691.jpg")
+    no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.explore {
+  height: 100vh !important;
+  background-color: var(--mainBlack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.exploreLink {
+  margin-top: 10vh;
+  padding: 1rem 3rem;
+  background-color: var(--mainGreen);
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.AboutHeader {
+  height: 60vh;
+  width: 100%;
+  background: url("./images/chicken-salad-3840x2160-nuts-cabbage-5969.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.AboutSection {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutSectionImg {
+  width: 50%;
+  height: 100%;
+  background: url("./images/meat-2560x1440-spices-cherry-asparagus-5966.jpg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.AboutSectionText {
+  width: 50%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 2%;
+  padding-top: 10%;
+}
+
+.AboutSectionText h1 {
+  font-size: 40px;
+}
+
+.AboutSectionText p {
+  font-size: 25px;
+}
+
+.About {
+  overflow-y: hidden;
+}
+
+@media (max-width: 800px) {
+  .AboutSection {
+    flex-direction: column;
+  }
+  .AboutSectionImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 2vh;
+    background: url("./images/meat-2560x1440-spices-cherry-asparagus-5966.jpg")
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .AboutSectionText {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 10%;
+  }
+
+  .AboutSectionText h1 {
+    font-size: 30px;
+  }
+
+  .AboutSectionText p {
+    font-size: 20px;
+  }
+}
+
+.SignUp {
+  height: 100%;
+  width: 100%;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  overflow-x: hidden;
+}
+
+.SignUpHeader {
+  height: 20vh;
+}
+
+.SignUpMethods {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80vh;
+}
+
+.SocialMediaSignUp {
+  width: 50%;
+
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13vh;
+}
+
+.SignWith {
+  width: 31vw;
+  padding: 1rem 3rem;
+  margin-top: 3vh;
+  background: #232323;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.SignWith:hover {
+  color: grey;
+}
+
+.FormSection {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .SignUpMethods {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .SocialMediaSignUp {
+    width: 100%;
+    border-right: none;
+    height: 50%;
+    order: 2;
+  }
+
+  .SignWith {
+    width: 80vw;
+    padding: 1rem 4rem;
+    margin-top: 3vh;
+    background: #232323;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.Recipies {
+  background-color: var(--mainBlack);
+}
+
+.RecipiesSearchForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.RecipeSearchInput {
+  width: 25rem;
+  padding: 1rem 3rem;
+  -webkit-text-fill-color: white;
+  font-size: 17px;
+  margin-top: 3vh;
+  /*border: 2px solid var(--mainWhite);*/
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #222222;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 760px) {
+  .RecipeSearchInput {
+    width: 17rem;
+  }
+}
+
+.RecipiesSearchForm .btn {
+  padding: 0.8rem 4rem;
+  outline: none;
+  border: 1px solid var(--mainWhite);
+  border-radius: 20px;
+  background-color: var(--mainBlack);
   color: white;
+  margin-top: 2vh;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.RecipiesSearchForm .btn2 {
+  padding: 0.8rem 4rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--mainGreen);
+  color: white;
+  margin-top: 2vh;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CircularLoad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  margin-bottom: 10vh;
 }
